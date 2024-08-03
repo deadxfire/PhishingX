@@ -38,42 +38,6 @@ Follow these steps to install and set up PhishingX on Linux:
 
    This script will install the required tools including PHP, jq, figlet, lolcat, and ngrok.
 
-### On Termux
-
-For Termux users, you'll need to install the required packages manually:
-If Ngrok is not functioning, please use Cloudflare in Termux as an alternative.
-
-1. **Update Termux Packages**
-
-   ```sh
-   pkg update -y
-   pkg upgrade -y
-   ```
-
-2. **Install Required Packages**
-
-   ```sh
-   pkg install php jq figlet gem wget unzip -y
-   ```
-
-3. **Install lolcat**
-
-   ```sh
-   pkg install gem
-   pkg install openssh
-   gem install lolcat
-   ```
-
-4. **Install ngrok**
-
-   ```sh
-   wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-arm.zip
-   unzip ngrok-stable-linux-arm.zip
-   mv ngrok /data/data/com.termux/files/usr/bin/
-   ```
-
-   Make sure to update your PATH if necessary, or place the `ngrok` binary in a directory that is already in your PATH.
-
 ## Usage
 
 1. **Run the Phishing Tool**
@@ -83,13 +47,13 @@ If Ngrok is not functioning, please use Cloudflare in Termux as an alternative.
    ```
 
    This will:
-   - Clear the terminal screen.
    - Display tool information and options.
-   - Prompt you to enter your ngrok auth token.
    - Allow you to select a phishing page.
+   - Use Ngrok or Cloudflare to create a public URL for accessing phishing pages.
+   - Automatically handle Ngrok authentication and start a local PHP server.
    - Start a PHP server to serve the selected page.
-   - Use ngrok to provide a public URL for accessing the phishing page.
-   - Show the ngrok URL and phishing page URL in the terminal.
+   - Use ngrok or CloudFlare to provide a public URL for accessing the phishing page.
+   - Show the URL and phishing page URL in the terminal.
 
 2. **Select a Service**
 
@@ -119,8 +83,6 @@ Author: DeadXFire
 WARNING: This tool is for educational purposes only.
 Unauthorized use is illegal and unethical.
 
-Enter your ngrok auth token: [your_token]
-Authtoken saved to configuration file: /home/kali/.ngrok2/ngrok.yml
 Select a service to start phishing:
 1. Facebook
 2. Facebook Security Page
@@ -146,9 +108,4 @@ This tool is for educational purposes only. The author, DeadXFire, takes no resp
 For any questions or issues, please contact [DeadXFire](mailto:arindam.makar1@gmail.com).
 ```
 
-### Explanation:
-
-- **Termux Installation Instructions**: Added specific instructions for installing required packages and tools on Termux.
-- **General Installation Instructions**: For Linux systems as previously provided.
-
-This `README.md` should now cover installation instructions for both Linux and Termux environments, providing clear guidance for users.
+This `README.md` should now cover installation instructions for Linux environments, providing clear guidance for users. Additional phishing pages will be available soon.
