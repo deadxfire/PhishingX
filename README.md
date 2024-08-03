@@ -143,7 +143,7 @@ This tool is for educational purposes only. The author, DeadXFire, takes no resp
 
 ## Contact
 
-For any questions or issues, please contact [DeadXFire](arindam.makar1@gmail.com).
+For any questions or issues, please contact [DeadXFire](mailto:arindam.makar1@gmail.com).
 ```
 
 ### Explanation:
