@@ -33,6 +33,7 @@ Follow these steps to install and set up PhishingX on Linux:
    Ensure you have root privileges to run the installation script.
 
    ```sh
+   chmod +x install.sh
    sudo ./install.sh
    ```
 
