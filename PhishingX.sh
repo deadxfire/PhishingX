@@ -27,7 +27,7 @@ case $choice in
         page="instagram.php"
         ;;
     4)
-        page="youtube.php"
+        page="google.php"
         ;;
     *)
         echo "Invalid choice"
