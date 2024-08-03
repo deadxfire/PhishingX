@@ -44,7 +44,8 @@ Follow these steps to install and set up PhishingX on Linux:
 1. **Run the Phishing Tool**
 
    ```sh
-   ./phishing.sh
+   chmod +x PhishingX.sh
+   ./PhishingX.sh
    ```
 
    This will:
