@@ -2,7 +2,7 @@
 
 # Display tool name with figlet and lolcat
 figlet -c -f slant "PhishingX" | lolcat
-echo "Author: DeadXFire" | lolcat
+echo "Author: DeadXFire (Arindam Makar)" | lolcat
 # Display warning message and your name
 echo -e "\033[31mWARNING: This tool is for educational purposes only.\033[0m"
 echo "Unauthorized use is illegal and unethical." | lolcat
