@@ -1,19 +1,19 @@
-Here's the updated `README.md` file with instructions for Termux users, including the installation of required packages and tools:
+# PhisingX
 
 ```markdown
 # PhishingX
 
 ## Overview
 
-**PhishingX** is a Linux-based phishing tool designed for educational purposes only. It allows users to create phishing pages for popular services like Facebook, Instagram, and YouTube. The tool uses ngrok to tunnel HTTP requests and display a public URL where the phishing page can be accessed. This tool is intended to demonstrate phishing techniques and should not be used for malicious activities.
+**PhishingX** is a Linux-based phishing tool designed for educational purposes only. It allows users to create phishing pages for popular Indian services like Facebook, Instagram, YouTube etc. The tool uses ngrok and cloudflare to tunnel HTTP requests and display a public URL where the phishing page can be accessed. This tool is intended to demonstrate phishing techniques and should not be used for malicious activities.
 
 ## Features
 
-- Create phishing pages for Facebook, Instagram, and YouTube.
-- Use ngrok to create a public URL for accessing phishing pages.
+- Create phishing pages for Facebook, Instagram, YouTube, etc.
+- Use ngrok or CloudFlare to create a public URL for accessing phishing pages.
 - Automatically handle ngrok authentication and start a local PHP server.
 - Clear terminal screen for a clean user interface.
-- Display ngrok URL and phishing page URL.
+- Display ngrok or CloudFlare URL and phishing page URL.
 
 ## Installation
 
@@ -41,6 +41,7 @@ Follow these steps to install and set up PhishingX on Linux:
 ### On Termux
 
 For Termux users, you'll need to install the required packages manually:
+If Ngrok is not functioning, please use Cloudflare in Termux as an alternative.
 
 1. **Update Termux Packages**
 
