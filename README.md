@@ -1,6 +1,6 @@
 # PhisingX
 
-```markdown
+
 # PhishingX
 
 ## Overview
@@ -22,7 +22,7 @@
 Follow these steps to install and set up PhishingX on Linux:
 
 1. **Clone the Repository**
-
+```markdown
    ```sh
    git clone https://github.com/deadxfire/PhishingX.git
    cd PhishingX
