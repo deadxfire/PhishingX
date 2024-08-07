@@ -86,7 +86,7 @@ Select a service to start phishing:
 1. Facebook
 2. Facebook Security Page
 3. Instagram
-4. YouTube
+4. Google
 Enter your choice: 
 ```
 
