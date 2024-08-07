@@ -1,6 +1,3 @@
-# PhisingX
-
-
 # PhishingX
 
 ## Overview
