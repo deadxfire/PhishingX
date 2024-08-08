@@ -31,6 +31,6 @@ sudo apt install ngrok -y
 
 # Set executable permissions for the main script
 echo "Setting executable permissions..."
-chmod +x phishing.sh
+chmod +x PhishingX.sh
 
-echo "Installation complete. Run chmod +x PhishingX.sh first. Now you can run ./PhishingX.sh to start the tool." | lolcat
+echo "Installation complete. Now you can run ./PhishingX.sh to start the tool." | lolcat
