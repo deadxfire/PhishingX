@@ -38,5 +38,5 @@ rm cloudflared-linux-amd64.deb
 echo "Setting executable permissions..."
 chmod +x PhishingX.sh
 
-echo -e "Installation complete. Now you can run \033[1m$(echo './PhishingX.sh' | lolcat)\033[0m to start the tool."
+echo -e "Installation complete. Now you can run ./PhishingX.sh' to start the tool." | lolcat
 
